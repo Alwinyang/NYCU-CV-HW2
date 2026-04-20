@@ -1,8 +1,10 @@
-
-NYCU Computer Vision HW2
+#######################################
+##    Date : 20260420                ##   
+##    NYCU Computer Vision : HW2     ##
+##    Student ID : 412551033         ##    
+#######################################
 
 Project Description
-
 This project is part of the NYCU Computer Vision course homework.
 
 The goal is to perform object detection on a given dataset and generate prediction results in the required JSON format.
@@ -13,7 +15,7 @@ We adopt \*\*YOLOv8\*\* as the main model for training and inference due to its 
 
 
 
-\## Method Overview
+Method Overview
 
 
 
@@ -49,23 +51,23 @@ NYCU-CV-HW2/
 
 
 
-\## ⚙️ Environment Setup
+Environment Setup
 
 
 
-\### Requirements
+Requirements
 
 
 
-\* Python 3.8+
+Python 3.8+
 
-\* PyTorch
+PyTorch
 
-\* Ultralytics YOLOv8
+Ultralytics YOLOv8
 
 
 
-\### Install dependencies
+Install dependencies
 
 
 
@@ -73,9 +75,7 @@ pip install ultralytics torch torchvision opencv-python numpy
 
 
 
-\## 📊 Dataset
-
-
+Dataset
 
 The dataset should be organized as follows:
 
@@ -90,46 +90,28 @@ data/
 &#x20;   └── images/
 
 
+Dataset is not included in this repository.
 
 
 
-※ Dataset is not included in this repository.
-
-
-
-\## Training
-
-
+Training
 
 Run the following command to train the model:
 
 python train.py
 
+Training Details
+
+Model: YOLOv8
+
+Image size: 640
+
+Batch size: 16
+
+Epochs: 50 (can be adjusted)
 
 
-
-
-\### Training Details
-
-
-
-\* Model: YOLOv8
-
-\* Image size: 640
-
-\* Batch size: 16
-
-\* Epochs: 50 (can be adjusted)
-
-
-
-\---
-
-
-
-\## Inference
-
-
+Inference
 
 To generate prediction results:
 
@@ -141,111 +123,45 @@ pred.json
 
 
 
-\## Output Format
-
-
+Output Format
 
 The output file `pred.json` follows the required format:
 
+Result
 
 
-```json
 
-\[
+Experiment Notes
 
-&#x20; {
 
-&#x20;   "image\_id": "1.png",
 
-&#x20;   "bbox": \[x, y, width, height],
+Lowering confidence threshold improves recall.
 
-&#x20;   "score": 0.95,
+Adjusting IoU threshold helps reduce duplicate boxes.
 
-&#x20;   "category\_id": 3
+Data augmentation can improve performance.
 
-&#x20; }
 
-]
 
-```
+Limitations
 
 
 
-\---
+Model performance depends heavily on training data quality.
 
+No hyperparameter tuning was extensively performed.
 
+Training was conducted on Google Colab with limited runtime.
 
-\## Result
+2026 0420 NYCU Alwin HW2
 
 
 
-\* The model achieves a valid score on the evaluation platform.
 
-\* Example score: \*\*0.24 (baseline)\*\*
 
 
 
-\---
 
-
-
-\## Experiment Notes
-
-
-
-\* Lowering confidence threshold improves recall.
-
-\* Adjusting IoU threshold helps reduce duplicate boxes.
-
-\* Data augmentation can improve performance.
-
-
-
-\---
-
-
-
-\## Limitations
-
-
-
-\* Model performance depends heavily on training data quality.
-
-\* No hyperparameter tuning was extensively performed.
-
-\* Training was conducted on Google Colab with limited runtime.
-
-
-
-\---
-
-
-
-\## Implementation Details
-
-
-
-\* Framework: PyTorch + Ultralytics YOLOv8
-
-\* Platform: Google Colab
-
-\* OS: Windows (local environment)
-
-
-
-\---
-
-
-
-\## Notes
-
-
-
-\* Model weights (`.pt`) are not included due to file size limitation.
-
-\* Dataset is not uploaded due to course policy.
-
-\* Only final prediction file is included.
 
 
 
