@@ -4,19 +4,11 @@
 
 
 
-\# NYCU Computer Vision HW2
-
-
-
 Object Detection using YOLOv8
 
 
 
-\---
-
-
-
-\## 📌 Project Description
+\## Project Description
 
 
 
@@ -30,11 +22,7 @@ We adopt \*\*YOLOv8\*\* as the main model for training and inference due to its 
 
 
 
-\---
-
-
-
-\## 🧠 Method Overview
+\## Method Overview
 
 
 
@@ -52,15 +40,9 @@ The workflow of this project includes:
 
 
 
-\---
+\## Project Structure
 
 
-
-\## 📂 Project Structure
-
-
-
-```
 
 NYCU-CV-HW2/
 
@@ -73,12 +55,6 @@ NYCU-CV-HW2/
 ├── pred.json               # Final submission file
 
 ├── README.md               # Project documentation
-
-```
-
-
-
-\---
 
 
 
@@ -102,15 +78,7 @@ NYCU-CV-HW2/
 
 
 
-```bash
-
 pip install ultralytics torch torchvision opencv-python numpy
-
-```
-
-
-
-\---
 
 
 
@@ -119,10 +87,6 @@ pip install ultralytics torch torchvision opencv-python numpy
 
 
 The dataset should be organized as follows:
-
-
-
-```
 
 data/
 
@@ -134,7 +98,7 @@ data/
 
 &#x20;   └── images/
 
-```
+
 
 
 
@@ -142,23 +106,15 @@ data/
 
 
 
-\---
-
-
-
-\## 🚀 Training
+\## Training
 
 
 
 Run the following command to train the model:
 
-
-
-```bash
-
 python train.py
 
-```
+
 
 
 
@@ -180,39 +136,21 @@ python train.py
 
 
 
-\## 🔍 Inference
+\## Inference
 
 
 
 To generate prediction results:
 
-
-
-```bash
-
 python submission.py
-
-```
-
-
 
 This will produce:
 
-
-
-```
-
 pred.json
 
-```
 
 
-
-\---
-
-
-
-\## 📦 Output Format
+\## Output Format
 
 
 
@@ -246,7 +184,7 @@ The output file `pred.json` follows the required format:
 
 
 
-\## 📈 Result
+\## Result
 
 
 
@@ -260,7 +198,7 @@ The output file `pred.json` follows the required format:
 
 
 
-\## 🧪 Experiment Notes
+\## Experiment Notes
 
 
 
@@ -276,7 +214,7 @@ The output file `pred.json` follows the required format:
 
 
 
-\## ⚠️ Limitations
+\## Limitations
 
 
 
@@ -292,7 +230,7 @@ The output file `pred.json` follows the required format:
 
 
 
-\## 🖥️ Implementation Details
+\## Implementation Details
 
 
 
@@ -308,7 +246,7 @@ The output file `pred.json` follows the required format:
 
 
 
-\## 📌 Notes
+\## Notes
 
 
 
@@ -320,37 +258,9 @@ The output file `pred.json` follows the required format:
 
 
 
-\---
 
 
 
-\## 👨‍💻 Author
-
-
-
-Alwinyang
-
-NYCU Computer Vision Course
-
-
-
-\---
-
-
-
-\## 📎 Reference
-
-
-
-\* https://github.com/ultralytics/ultralytics
-
-\* YOLOv8 Documentation
-
-\* Course materials (NYCU CV)
-
-
-
-\---
 
 
 
