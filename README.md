@@ -1,8 +1,6 @@
-#######################################
-##    Date : 20260420                ##   
-##    NYCU Computer Vision : HW2     ##
-##    Student ID : 412551033         ##    
-#######################################
+Date : 20260420                   
+NYCU Computer Vision : HW2     
+Student ID : 412551033             
 
 Project Description
 This project is part of the NYCU Computer Vision course homework.
