@@ -1,16 +1,7 @@
-"# NYCU-CV-HW2"
 
 NYCU Computer Vision HW2
 
-
-
-
-
-
-
 Project Description
-
-
 
 This project is part of the NYCU Computer Vision course homework.
 
