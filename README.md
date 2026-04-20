@@ -1,6 +1,6 @@
 "# NYCU-CV-HW2"
 
-\# NYCU Computer Vision HW2
+NYCU Computer Vision HW2
 
 
 
@@ -8,7 +8,7 @@
 
 
 
-\## Project Description
+Project Description
 
 
 
@@ -50,7 +50,7 @@ NYCU-CV-HW2/
 
 ├── submission.py           # Inference script (generate pred.json)
 
-├── convert\_to\_yolo.py      # Convert dataset to YOLO format
+├── convert.py              # Convert dataset to test format
 
 ├── pred.json               # Final submission file
 
